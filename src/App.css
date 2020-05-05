@@ -2,10 +2,13 @@
   text-align: center;
   width: 100%;
   background-color: #282c34;
+  padding: 40px;
 }
 
 .shawshankImage {
   width: 100%;
+  height: 30%;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -24,7 +27,11 @@
   border-top: 2px solid white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  grid-gap: 30px;
+  grid-template-rows: 2500px 2500px;
+  align-items: stretch;
+  justify-items: stretch;
+  grid-gap: 5px;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
 }
