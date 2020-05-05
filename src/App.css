@@ -8,6 +8,11 @@
   flex-wrap: wrap;
 }
 
+img {
+  height: 1500px;
+  width: 1000px;
+}
+
 .item {
   padding: 30px;
   flex: 1;
