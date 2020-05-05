@@ -11,13 +11,6 @@ import skins from "./Images/skins.jpg";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img
-          src={shawshank}
-          className="shawshankImage"
-          alt="Shawshank Redemption"
-        />
-      </header>
       <p className="container">
         <img src={peepShow} />
         <img src={downton} />
