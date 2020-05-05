@@ -1,5 +1,4 @@
 import React from "react";
-import shawshank from "./Images/shawshank.jpg";
 import "./App.css";
 import peepShow from "./Images/peepShow.jpg";
 import downton from "./Images/downton.jpg";
@@ -11,14 +10,26 @@ import skins from "./Images/skins.jpg";
 function App() {
   return (
     <div className="App">
-      <p className="container">
-        <img src={peepShow} />
-        <img src={downton} />
-        <img src={derryGirls} />
-        <img src={explained} />
-        <img src={louisT} />
-        <img src={skins} />
-      </p>
+      <div className="container">
+        <div className="item">
+          <img src={peepShow} />
+        </div>
+        <div className="item">
+          <img src={downton} />
+        </div>
+        <div className="item">
+          <img src={derryGirls} />
+        </div>
+        <div className="item">
+          <img src={explained} />
+        </div>
+        <div className="item">
+          <img src={louisT} />
+        </div>
+        <div className="item">
+          <img src={skins} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,32 +1,20 @@
 .App {
   text-align: center;
-  width: 100%;
-  background-color: #282c34;
-  padding: 40px;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  color: white;
-  box-sizing: border-box;
-  width: 100%;
+  background-color: black;
 }
 
 .container {
-  background-color: #282c34;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: stretch;
-  justify-items: stretch;
-  grid-gap: 15px;
-  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media (min-width: 0px) and (max-width: 450px) {
+.item {
+  padding: 30px;
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
   .container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
