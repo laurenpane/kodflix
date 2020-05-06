@@ -11,6 +11,7 @@
 img {
   height: 2200px;
   width: 1500px;
+  transform: 1s ease;
 }
 
 .item {
@@ -24,20 +25,21 @@ img {
   background-color: black;
   font-size: 100px;
   font-weight: bold;
-  opacity: 0.9;
+  opacity: 0.5;
   position: absolute;
   text-align: center;
-  line-height: 420px;
-  height: 420px;
-  top: 80%;
+  top: 1%;
+  bottom: 1%;
   left: 8.2%;
   right: 8.3%;
-  bottom: 1%;
+  line-height: 2200px;
+  height: 2200px;
 }
 
-.hoverCover:hover {
-  color: black;
-  background-color: white;
+.item:hover .hoverCover {
+  color: white;
+  background-color: black;
+  opacity: 0.9;
 }
 
 @media only screen and (max-width: 600px) {
@@ -49,11 +51,5 @@ img {
     height: 650px;
     width: 400px;
     position: relative;
-  }
-
-  .hoverCover {
-    left: 20%;
-    right: 20%;
-    bottom: 1%;
   }
 }
