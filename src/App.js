@@ -12,28 +12,40 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="item">
-          <img src={peepShow} />
-          <div className="hoverCover">Peep Show</div>
+          <img src={peepShow} className="poster" />
+          <div className="overlay">
+            <h2>Peep Show</h2>
+          </div>
         </div>
         <div className="item">
-          <img src={downton} />
-          <div className="hoverCover">Downton Abbey</div>
+          <img src={downton} className="poster" />
+          <div className="overlay">
+            <h2>Downton Abbey</h2>
+          </div>
         </div>
         <div className="item">
-          <img src={derryGirls} />
-          <div className="hoverCover">Derry Girls</div>
+          <img src={derryGirls} className="poster" />
+          <div className="overlay">
+            <h2>Derry Girls</h2>
+          </div>
         </div>
         <div className="item">
-          <img src={explained} />
-          <div className="hoverCover">Explained</div>
+          <img src={explained} className="poster" />
+          <div className="overlay">
+            <h2>Explained</h2>
+          </div>
         </div>
         <div className="item">
-          <img src={louisT} />
-          <div className="hoverCover">Louis Theroux</div>
+          <img src={louisT} className="poster" />
+          <div className="overlay">
+            <h2>Louis Theroux</h2>
+          </div>
         </div>
         <div className="item">
-          <img src={skins} />
-          <div className="hoverCover">Skins</div>
+          <img src={skins} className="poster" />
+          <div className="overlay">
+            <h2>Skins</h2>
+          </div>
         </div>
       </div>
     </div>
