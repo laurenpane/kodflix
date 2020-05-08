@@ -21,6 +21,7 @@
 }
 
 .overlay {
+  transition: height ease 1.5s;
   color: white;
   background-color: black;
   font-weight: bold;
@@ -28,16 +29,17 @@
   opacity: 0.9;
   position: absolute;
   text-align: center;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 25%;
+  height: 20%;
 }
 
 .item:hover .overlay {
   color: black;
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.95;
+  height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
