@@ -11,42 +11,23 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="item">
-          <img src={peepShow} className="poster" />
-          <div className="overlay">
-            <h2 className="posterTxt">Peep Show</h2>
-          </div>
-        </div>
-        <div className="item">
-          <img src={downton} className="poster" />
-          <div className="overlay">
-            <h2 className="posterTxt">Downton Abbey</h2>
-          </div>
-        </div>
-        <div className="item">
-          <img src={derryGirls} className="poster" />
-          <div className="overlay">
-            <h2 className="posterTxt">Derry Girls</h2>
-          </div>
-        </div>
-        <div className="item">
-          <img src={explained} className="poster" />
-          <div className="overlay">
-            <h2 className="posterTxt">Explained</h2>
-          </div>
-        </div>
-        <div className="item">
-          <img src={louisT} className="poster" />
-          <div className="overlay">
-            <h2 className="posterTxt">Louis Theroux</h2>
-          </div>
-        </div>
-        <div className="item">
-          <img src={skins} className="poster" />
-          <div className="overlay">
-            <h2 className="posterTxt">Skins</h2>
-          </div>
-        </div>
+        <Series name="Peep Show" logo={peepShow} />
+        <Series name="Downton Abbey" logo={downton} />
+        <Series name="Derry Girls" logo={derryGirls} />
+        <Series name="Explained" logo={explained} />
+        <Series name="Louis Thereoux" logo={louisT} />
+        <Series name="Skins" logo={skins} />
+      </div>
+    </div>
+  );
+}
+
+function Series(props) {
+  return (
+    <div className="item">
+      <img src={props.logo} alt={`${props.name} logo`} className="poster" />
+      <div className="overlay">
+        <h2>{props.name}</h2>
       </div>
     </div>
   );
