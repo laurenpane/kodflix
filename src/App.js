@@ -14,37 +14,37 @@ function App() {
         <div className="item">
           <img src={peepShow} className="poster" />
           <div className="overlay">
-            <h2>Peep Show</h2>
+            <h2 className="posterTxt">Peep Show</h2>
           </div>
         </div>
         <div className="item">
           <img src={downton} className="poster" />
           <div className="overlay">
-            <h2>Downton Abbey</h2>
+            <h2 className="posterTxt">Downton Abbey</h2>
           </div>
         </div>
         <div className="item">
           <img src={derryGirls} className="poster" />
           <div className="overlay">
-            <h2>Derry Girls</h2>
+            <h2 className="posterTxt">Derry Girls</h2>
           </div>
         </div>
         <div className="item">
           <img src={explained} className="poster" />
           <div className="overlay">
-            <h2>Explained</h2>
+            <h2 className="posterTxt">Explained</h2>
           </div>
         </div>
         <div className="item">
           <img src={louisT} className="poster" />
           <div className="overlay">
-            <h2>Louis Theroux</h2>
+            <h2 className="posterTxt">Louis Theroux</h2>
           </div>
         </div>
         <div className="item">
           <img src={skins} className="poster" />
           <div className="overlay">
-            <h2>Skins</h2>
+            <h2 className="posterTxt">Skins</h2>
           </div>
         </div>
       </div>
