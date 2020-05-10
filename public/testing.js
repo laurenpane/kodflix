@@ -1,5 +1,8 @@
 function doStuff(list) {
-  return list.join(", ");
+  return list
+    .split("o")
+    .map((item) => item.toUpperCase())
+    .join('e');
 }
 
-console.log(doStuff(["cat", "dog", "rabbit"]));
+console.log(doStuff("hello everyone"));

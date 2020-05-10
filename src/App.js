@@ -5,7 +5,7 @@ import downton from "./Images/downton.jpg";
 import derryGirls from "./Images/derryGirls.jpg";
 import explained from "./Images/explained.jpg";
 import louisT from "./Images/louisT.jpg";
-import skins from "./Images/skins.jpg";
+import sexEd from "./Images/sexEd.jpg";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Series name="Derry Girls" logo={derryGirls} />
         <Series name="Explained" logo={explained} />
         <Series name="Louis Thereoux" logo={louisT} />
-        <Series name="Skins" logo={skins} />
+        <Series name="Sex Education" logo={sexEd} />
       </div>
     </div>
   );
