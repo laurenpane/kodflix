@@ -1,11 +1,11 @@
 import React from "react";
-import peepShow from "./Images/peepShow.jpg";
-import downton from "./Images/downton.jpg";
-import derryGirls from "./Images/derryGirls.jpg";
-import explained from "./Images/explained.jpg";
-import louisT from "./Images/louisT.jpg";
-import sexEd from "./Images/sexEd.jpg";
-import Series from "./Series.js";
+import peepShow from "../Images/peepShow.jpg";
+import downton from "../Images/downton.jpg";
+import derryGirls from "../Images/derryGirls.jpg";
+import explained from "../Images/explained.jpg";
+import louisT from "../Images/louisT.jpg";
+import sexEd from "../Images/sexEd.jpg";
+import Series from "../Series/Series.js";
 
 export default function SeriesGallery() {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
-import SeriesGallery from "./SeriesGallery.js";
-import Details from "./Details.js";
+import SeriesGallery from "./SeriesGallery/SeriesGallery.js";
+import Details from "./Details/Details.js";
 
 export default function App() {
   return (
