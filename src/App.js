@@ -1,38 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
-import peepShow from "./Images/peepShow.jpg";
-import downton from "./Images/downton.jpg";
-import derryGirls from "./Images/derryGirls.jpg";
-import explained from "./Images/explained.jpg";
-import louisT from "./Images/louisT.jpg";
-import sexEd from "./Images/sexEd.jpg";
+import SeriesGallery from "./SeriesGallery.js";
+import Details from "./Details.js";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <Series name="Peep Show" logo={peepShow} />
-        <Series name="Downton Abbey" logo={downton} />
-        <Series name="Derry Girls" logo={derryGirls} />
-        <Series name="Explained" logo={explained} />
-        <Series name="Louis Thereoux" logo={louisT} />
-        <Series name="Sex Education" logo={sexEd} />
+    <Router>
+      <div className="App">
+        <Route exact path="/" component={SeriesGallery} />
+        <Route path="/details" component={Details} />
       </div>
-    </div>
+    </Router>
   );
 }
-
-function Series(props) {
-  return (
-    <div className="item">
-      <img src={props.logo} alt={`${props.name} logo`} />
-      <div className="overlay">
-        <div className="text">
-          <h2>{props.name}</h2>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default App;
