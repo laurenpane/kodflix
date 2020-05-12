@@ -10,12 +10,12 @@ import Series from "../Series/Series.js";
 export default function SeriesGallery() {
   return (
     <div className="container">
-      <Series name="Peep Show" logo={peepShow} />
-      <Series name="Downton Abbey" logo={downton} />
-      <Series name="Derry Girls" logo={derryGirls} />
-      <Series name="Explained" logo={explained} />
-      <Series name="Louis Thereoux" logo={louisT} />
-      <Series name="Sex Education" logo={sexEd} />
+      <Series id="peepShow" name="Peep Show" logo={peepShow} />
+      <Series id="downtonAbbey" name="Downton Abbey" logo={downton} />
+      <Series id="derryGirls" name="Derry Girls" logo={derryGirls} />
+      <Series id="explained" name="Explained" logo={explained} />
+      <Series id="louisTheroux" name="Louis Thereoux" logo={louisT} />
+      <Series id="sexEducation" name="Sex Education" logo={sexEd} />
     </div>
   );
 }
