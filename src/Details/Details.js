@@ -12,7 +12,7 @@ export default class Details extends React.Component {
   }
 
   componentDidMount() {
-    let tvShowId = this.props.match.params.details;
+    let tvShowId = this.props.match.params.tvShowId;
     let tvShow = getGallery().find((tvShow) => {
       return tvShow.id === tvShowId;
     });
