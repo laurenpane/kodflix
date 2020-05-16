@@ -1,26 +1,28 @@
 import React from "react";
 import "./Details.css";
 import { Link } from "react-router-dom";
+import getGallery from "../SeriesGallery/GetGallery.js";
 
 export default class Details extends React.Component {
   constructor() {
     super();
     this.state = {
-      message:
-        "Hello, this will be the details page for each Movie & TV show :)",
+      tvShow: {},
     };
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ message: "Coming soon! :)" });
-    }, 3000);
+    let tvShowId = this.props.match.params.details;
+    let tvShow = getGallery().find((tvShow) => {
+      return tvShow.id === tvShowId;
+    });
+    this.setState({ tvShow: tvShow });
   }
 
   render() {
     return (
       <div>
-        <h1>{this.state.message}</h1>
+        <h1>{this.state.tvShow.name}</h1>
         <Link className="detailsLink" to="/">
           Back to homepage
         </Link>

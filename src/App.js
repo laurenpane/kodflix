@@ -9,7 +9,7 @@ export default function App() {
     <Router>
       <div className="App">
         <Route exact path="/" component={SeriesGallery} />
-        <Route exact path="/:details" component={Details} />
+        <Route exact path="/:tvShowId" component={Details} />
       </div>
     </Router>
   );
