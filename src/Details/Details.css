@@ -2,5 +2,11 @@ h1 {
   background-color: black;
   height: 100%;
   color: white;
-  font-size: 500px;
+  font-size: 200px;
+}
+
+.detailsLink {
+  background-color: white;
+  color: black;
+  font-size: 100px;
 }
