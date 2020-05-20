@@ -24,10 +24,16 @@ export default class Details extends React.Component {
       return <Redirect to="/not-found" />;
     } else {
       return (
-        <div>
-          <h1>{this.state.tvShow.name}</h1>
-          <Link className="detailsLink" to="/">
-            Back to homepage
+        <div className="Details">
+          <h1 className="title">{this.state.tvShow.name}</h1>
+          <img
+            className="logo"
+            src={this.state.tvShow.logo}
+            alt={this.state.tvShow.name}
+          />
+          <h3 className="synopsis">{this.state.tvShow.info}</h3>
+          <Link className="backToHome" to="/">
+            {this.state.tvShow.link}
           </Link>
         </div>
       );
