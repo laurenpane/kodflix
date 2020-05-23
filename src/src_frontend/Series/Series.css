@@ -6,3 +6,13 @@
   width: 400px;
   height: 400px;
 }
+
+.description {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.click {
+  font-style: bold;
+  font-size: 20px;
+}

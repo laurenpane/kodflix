@@ -9,6 +9,8 @@ export default function Series(props) {
       <div className="overlay">
         <div className="text">
           <h2 id="showName">{props.name}</h2>
+          <p className="description">{props.description}</p>
+          <p className="click">{props.click}</p>
         </div>
       </div>
     </Link>
