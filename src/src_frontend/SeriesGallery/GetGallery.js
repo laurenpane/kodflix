@@ -59,7 +59,7 @@ export default function getGallery() {
       click: "Click here to find out more",
       logo: louisT,
       info:
-        "Watch as award-winning journalist Louis Theroux investigates some of the world's most controversial subcultures, such as scientologists, white supremacists, and porn stars. Theroux immerses himself in their lifestyles by typically living amongst them, in turn subtly exposing the contradictions and flaws in the beliefs that frame their lives.",
+        "Watch as award-winning journalist Louis Theroux investigates some of the world's most controversial subcultures, such as scientology, white supremacy, and pornography. Theroux immerses himself in these lifestyles, typically by living amongst those at the forefront, in turn subtly exposing the contradictions and flaws in the beliefs that frame their lives.",
       link: "Back to homepage",
     },
     {
