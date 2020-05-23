@@ -22,8 +22,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
   animation: bounce 1s;
@@ -45,12 +43,12 @@
 
 .item:hover .overlay {
   opacity: 0.9;
-  animation: bounce 1s;
+  animation: bounce 1.5s;
   animation-fill-mode: forwards;
 }
 
 @keyframes bounce {
-  30% {
+  40% {
     top: 0;
     bottom: 0;
     height: 100%;
