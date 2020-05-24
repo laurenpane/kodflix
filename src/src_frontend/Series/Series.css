@@ -1,5 +1,5 @@
 #showName {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 #showLogo {
@@ -8,13 +8,13 @@
 }
 
 .description {
-  font-size: 24px;
-  font-style: italic;
+  font-size: 20px;
 }
 
 .click {
-  font-style: bold;
-  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
 }
 
 .Series {
