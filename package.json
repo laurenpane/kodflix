@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "_start-backend": "node src/src_backend/App.js"
+    "start-backend": "nodemon src/src_backend/App.js"
   },
   "eslintConfig": {
     "extends": "react-app"
