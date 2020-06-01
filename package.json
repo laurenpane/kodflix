@@ -16,7 +16,7 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "start-frontend": "serve -s build",
+    "start": "serve -s build",
     "start-local": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
