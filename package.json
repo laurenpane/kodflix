@@ -16,7 +16,7 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "start": "npm-run-all serve -s build start-backend",
+    "start": "npm-run-all -p serve -s build start-backend",
     "start-local": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
