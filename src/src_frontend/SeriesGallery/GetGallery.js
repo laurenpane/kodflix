@@ -1,9 +1,9 @@
 import peepShow from "../Images/peepShow.jpg";
-import downton from "../Images/downton.jpg";
+import downtonAbbey from "../Images/downtonAbbey.jpg";
 import derryGirls from "../Images/derryGirls.jpg";
 import explained from "../Images/explained.jpg";
-import louisT from "../Images/louisT.jpg";
-import sexEd from "../Images/sexEd.jpg";
+import louisThereoux from "../Images/louisThereoux.jpg";
+import sexEducation from "../Images/sexEducation.jpg";
 
 export default function getGallery() {
   return [
@@ -24,7 +24,7 @@ export default function getGallery() {
       description:
         "Thrilling period drama starring Hugh Bonneville and Maggie Smith",
       click: "Click to read more",
-      logo: downton,
+      logo: downtonAbbey,
       info:
         "Take a journey back in time to post-Edwardian Yorkshire, and follow the lives of the lovable aristocratic Crawley family. Watch as they and their domestic servants endure heartbreak, joy and experience great historical events which in turn affect their lives and the British social hierarchy.",
       link: "Back to homepage",
@@ -57,7 +57,7 @@ export default function getGallery() {
       description:
         "Award-winning documentaries from acclaimed journalist/broadcaster Louis Theroux",
       click: "Click to read more",
-      logo: louisT,
+      logo: louisThereoux,
       info:
         "Watch as award-winning journalist Louis Theroux investigates some of the world's most controversial subcultures, such as scientology, white supremacy, and pornography. Theroux immerses himself in these lifestyles, typically by living amongst those at the forefront, in turn subtly exposing the contradictions and flaws in the beliefs that frame their lives.",
       link: "Back to homepage",
@@ -68,7 +68,7 @@ export default function getGallery() {
       description:
         "Heartwarming British comedy starring Gillian Anderson and Asa Butterfield",
       click: "Click to read more",
-      logo: sexEd,
+      logo: sexEducation,
       info:
         "Go back to school with Otis, Eric, Maeve and their curious classmates as they navigate their way through teenage sex and relationships. Otis' mother, Jean Milburn, is a licensed sex therapist, and through a series of bizarre events, Otis himself becomes a paid sex therapist for his high school peers, despite being just as clueless as the rest of them.",
       link: "Back to homepage",
