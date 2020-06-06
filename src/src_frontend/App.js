@@ -6,6 +6,9 @@ import Details from "./Details/Details.js";
 import NotFound from "./NotFound.js";
 
 export default function App() {
+  fetch("http://localhost:3001/rest/TVShows")
+    .then((response) => response.json())
+    .then((data) => console.log(data));
   return (
     <Router>
       <div className="App">
