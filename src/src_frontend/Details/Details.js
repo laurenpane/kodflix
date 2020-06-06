@@ -1,7 +1,6 @@
 import React from "react";
 import "./Details.css";
 import { Link, Redirect } from "react-router-dom";
-import getGallery from "../SeriesGallery/GetGallery.js";
 
 export default class Details extends React.Component {
   constructor() {
@@ -13,10 +12,18 @@ export default class Details extends React.Component {
 
   componentDidMount() {
     let tvShowId = this.props.match.params.tvShowId;
-    let tvShow = getGallery().find((tvShow) => {
-      return tvShow.id === tvShowId;
-    });
-    this.setState({ tvShow: tvShow });
+
+    fetch("/rest/shows", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        let tvShow = data.find((tvShow) => tvShow.id === tvShowId);
+        this.setState({ tvShow: tvShow });
+      });
   }
 
   render() {

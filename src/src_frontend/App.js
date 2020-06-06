@@ -5,20 +5,16 @@ import SeriesGallery from "./SeriesGallery/SeriesGallery.js";
 import Details from "./Details/Details.js";
 import NotFound from "./NotFound.js";
 
-fetch("http://localhost:3001/rest/TVShows")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-
 export default function App() {
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
         <Switch>
           <Route exact path="/" component={SeriesGallery} />
           <Route exact path="/not-found" component={NotFound} />
           <Route exact path="/:tvShowId" component={Details} />
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
