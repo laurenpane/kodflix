@@ -3,6 +3,7 @@ import Series from "../Series/Series.js";
 import "./SeriesGallery.css";
 import netflix from "../Images/netflixLogo.png";
 import TVShows from "../../src_backend/TVShows.js";
+import getGallery from "./GetGallery.js";
 
 // export default class SeriesGallery extends React.Component {
 //   constructor() {
