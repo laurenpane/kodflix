@@ -21,13 +21,14 @@
   },
   "scripts": {
     "start": "node src/src_backend/App.js",
-    "start-local": "react-scripts start",
-    "start-dev": "npm-run-all -p start-local start-backend",
+    "start-serve-heroku": "serve -s build",
+    "start-frontend": "react-scripts start",
     "start-backend": "nodemon src/src_backend/App.js",
-    "start-backend-remote": "node src/src_backend/App.js",
-    "start-servers": "npm-run-all -p build start-backend",
+    "start-dev": "npm-run-all -p start-frontend start-backend",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
