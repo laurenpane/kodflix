@@ -5,10 +5,6 @@ import SeriesGallery from "./SeriesGallery/SeriesGallery.js";
 import Details from "./Details/Details.js";
 import NotFound from "./NotFound.js";
 
-fetch("http://localhost:3001/rest/TVShows")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-
 export default function App() {
   return (
     <Router>
