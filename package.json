@@ -17,14 +17,16 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "npm-run-all -s build start-backend-remote",
     "start-local": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start-backend": "nodemon src/src_backend/App.js",
     "start-dev": "npm-run-all -p start-local start-backend",
-    "build-start": "npm-run-all -p build start-backend"
+    "start-backend": "nodemon src/src_backend/App.js",
+    "start-backend-remote": "node src/src_backend/App.js",
+    "start-servers": "npm-run-all -p build start-backend",
+    "build": "react-scripts build",
+    "heroku-postbuild": "npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
