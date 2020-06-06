@@ -24,7 +24,6 @@
     "start-backend-remote": "node src/src_backend/App.js",
     "start-servers": "npm-run-all -p build start-backend",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
