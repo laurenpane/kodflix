@@ -7,6 +7,7 @@ export default class Details extends React.Component {
     super();
     this.state = {
       tVShow: {},
+      dataLoaded: false,
     };
   }
 
@@ -17,27 +18,28 @@ export default class Details extends React.Component {
       .then((response) => response.json())
       .then((show) => {
         let thisShow = show.find((thisTVShow) => thisTVShow.id === tVShowId);
-        this.setState({ tVShow: thisShow });
+        this.setState({ tVShow: thisShow, dataLoaded: true });
       });
   }
 
   render() {
-    let TVShow = this.state.tVShow;
-    return TVShow ? (
+    return this.state.tVShow === undefined ? (
+      <Redirect to="/not-found" />
+    ) : !this.state.dataLoaded ? (
+      <div>Information loading...</div>
+    ) : (
       <div className="Details">
-        <h1 className="title">{TVShow.name}</h1>
+        <h1 className="title">{this.state.tVShow.name}</h1>
         <img
           className="logo"
-          src={require(`../Images/${TVShow.id}.jpg`)}
-          alt={TVShow.name}
+          src={require(`../Images/${this.state.tVShow.id}.jpg`)}
+          alt={this.state.tVShow.name}
         />
-        <h3 className="synopsis">{TVShow.info}</h3>
+        <h3 className="synopsis">{this.state.tVShow.info}</h3>
         <Link className="backToHome" to="/">
-          {TVShow.link}
+          {this.state.tVShow.link}
         </Link>
       </div>
-    ) : (
-      <Redirect to="/not-found" />
     );
   }
 }
