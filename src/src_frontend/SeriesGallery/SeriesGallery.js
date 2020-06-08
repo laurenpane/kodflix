@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { Redirect } from "react-router-dom";
 import Series from "../Series/Series.js";
 import "./SeriesGallery.css";
 import netflix from "../Images/netflixLogo.png";
 
 export default function SeriesGallery() {
   const [shows, setShows] = useState([]);
-
-  fetch("/rest/TVShows", {
+  fetch("/TVShows", {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
@@ -32,7 +30,7 @@ export default function SeriesGallery() {
             click={show.click}
             logo={require(`../Images/${show.id}.jpg`)}
           />
-        ))(<Redirect to="/not-found" />)}
+        ))}
       </div>
     </>
   );

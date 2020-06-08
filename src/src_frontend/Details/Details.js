@@ -6,44 +6,38 @@ export default class Details extends React.Component {
   constructor() {
     super();
     this.state = {
-      tvShow: {},
+      tVShow: {},
     };
   }
 
   componentDidMount() {
-    let tvShowId = this.props.match.params.tvShowId;
+    let tVShowId = this.props.match.params.tVShowId;
 
-    fetch("/rest/shows", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
+    fetch(`/TVShows/${tVShowId}`)
       .then((response) => response.json())
-      .then((data) => {
-        let tvShow = data.find((tvShow) => tvShow.id === tvShowId);
-        this.setState({ tvShow: tvShow });
+      .then((show) => {
+        let thisShow = show.find((thisTVShow) => thisTVShow.id === tVShowId);
+        this.setState({ tVShow: thisShow });
       });
   }
 
   render() {
-    if (this.state.tvShow === undefined) {
-      return <Redirect to="/not-found" />;
-    } else {
-      return (
-        <div className="Details">
-          <h1 className="title">{this.state.tvShow.name}</h1>
-          <img
-            className="logo"
-            src={this.state.tvShow.logo}
-            alt={this.state.tvShow.name}
-          />
-          <h3 className="synopsis">{this.state.tvShow.info}</h3>
-          <Link className="backToHome" to="/">
-            {this.state.tvShow.link}
-          </Link>
-        </div>
-      );
-    }
+    let TVShow = this.state.tVShow;
+    return TVShow ? (
+      <div className="Details">
+        <h1 className="title">{TVShow.name}</h1>
+        <img
+          className="logo"
+          src={require(`../Images/${TVShow.id}.jpg`)}
+          alt={TVShow.name}
+        />
+        <h3 className="synopsis">{TVShow.info}</h3>
+        <Link className="backToHome" to="/">
+          {TVShow.link}
+        </Link>
+      </div>
+    ) : (
+      <Redirect to="/not-found" />
+    );
   }
 }
