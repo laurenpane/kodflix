@@ -20,13 +20,12 @@
     "serve": "^11.3.1"
   },
   "scripts": {
-    "start": "node src/src_backend/App.js",
+    "start": "npm-run-all -s build start-backend",
     "start-serve-heroku": "serve -s build",
     "start-frontend": "react-scripts start",
     "start-backend": "nodemon src/src_backend/App.js",
     "start-dev": "npm-run-all -p start-frontend start-backend",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
