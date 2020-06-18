@@ -15,3 +15,10 @@ app.get("*", function (req, res) {
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );
+
+app.get("/TVShows/:tvShowId", (req, res) => {
+  dbo.collection("shows").findOne({ id: req.params.tvShowId }, (err, doc) => {
+    if (err) throw err;
+    res.send(doc);
+  });
+});

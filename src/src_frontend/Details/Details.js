@@ -12,12 +12,12 @@ export default class Details extends React.Component {
   }
 
   componentDidMount() {
-    let tVShowId = this.props.match.params.tVShowId;
+    let tvShowId = this.props.match.params.tvShowId;
 
-    fetch(`/TVShows/${tVShowId}`)
+    fetch(`/TVShows/${tvShowId}`)
       .then((response) => response.json())
       .then((show) => {
-        let thisShow = show.find((thisTVShow) => thisTVShow.id === tVShowId);
+        let thisShow = show.find((thisTVShow) => thisTVShow.id === tvShowId);
         this.setState({ tVShow: thisShow, dataLoaded: true });
       });
   }
